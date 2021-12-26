@@ -1,0 +1,11 @@
+.mat-tab-label, .mat-tab-link {
+    color: rgb(12, 6, 6);
+}
+
+.mat-tab-label-active{
+    background-color: rgb(11, 236, 112);
+}
+
+::ng-deep .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    background-color: rgb(11, 236, 112);
+}

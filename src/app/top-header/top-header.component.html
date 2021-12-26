@@ -1,0 +1,9 @@
+<nav class="navbar-light bg-light" mat-tab-nav-bar [backgroundColor]="background">
+    <div class="container-fluid">
+        <a mat-tab-link class="navbar-brand" href="#">Navbar</a>
+        <a mat-tab-link *ngFor="let tab of tabs" 
+            (click)="activeTab = tab.label"
+            [routerLink]="tab.path"
+            [active]="activeTab == tab.label"> {{tab.label}} </a>
+    </div>
+</nav>
