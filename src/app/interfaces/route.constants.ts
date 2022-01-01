@@ -26,6 +26,34 @@ export const APP_ROUTES: AppRoute[] = [
     }
 ]
 
+export const PORTFOLIO_ROUTES: AppRoute[] = [
+    {
+        label: 'Angular',
+        path: '/angular',
+        index: 0
+    },
+    {
+        label: 'Agile',
+        path: '/agile',
+        index: 1
+    },
+    {
+        label: 'Java',
+        path: '/java',
+        index: 2
+    },
+    {
+        label: 'Python',
+        path: '/python',
+        index: 3
+    },
+    {
+        label: 'AWS',
+        path: '/aws',
+        index: 4
+    }
+]
+
 interface AppRoute {
     label: string,
     path: string,

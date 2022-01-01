@@ -1,0 +1,9 @@
+<div class="p-5">
+<ul class="nav flex-column">
+    <li class="nav-item" *ngFor="let portfolio of portfolios">
+        <a (click)="activeTab = portfolio.label" 
+        [routerLink]=" '/portfolios' +  portfolio.path">
+        {{portfolio.label}} </a>
+    </li>
+</ul>
+</div>

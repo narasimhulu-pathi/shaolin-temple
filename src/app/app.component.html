@@ -1,4 +1,20 @@
 <div class="pt-1">
   <app-top-header></app-top-header>
-  <router-outlet></router-outlet>
+</div>
+<div class="row">
+  <div class="col-2">
+    <div *ngIf="isPortfolioTab">
+      <app-portfolio-side-tabs></app-portfolio-side-tabs>
+    </div>
+  </div>
+  <div class="col p-3">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="col-2 p-2">
+    <app-content-right></app-content-right>
+  </div>
+</div>
+
+<div class="footer">
+  <p style="padding-top: 15px;"><b>Footer</b></p>
 </div>
